@@ -39,28 +39,82 @@
         .item-header {
             height: 70vw;
             grid-area: header;
-        }
-
-
-        .item-main {
-            height: 320vw;
-            grid-area: main;
+            background-image: url(billeder/geo_splash.jpg);
         }
 
         .item-undermenu {
             height: 15vw;
             grid-area: header;
             margin-top: 45vw;
+            background-color: white;
+        }
+
+        .item-main {
+            height: 320vw;
+            grid-area: main;
+            background-color: white;
         }
 
         .item-aabning {
             height: 45vw;
             grid-area: aabning;
+            background-color: white;
         }
 
         .item-footer {
             height: 50vw;
             grid-area: footer;
+            background-color: white;
+        }
+
+        @media screen and (min-width: 600px) {
+            .item-header {
+                display: none;
+            }
+
+            .item-undermenu {}
+
+            .container {
+                background-image: url(billeder/geo_splash.jpg);
+                grid-template-areas:
+                    'header main main main aabning'
+                    'footer footer footer footer footer'
+            }
+
+            .undermenu {
+                height: 50vw;
+            }
+
+            .item-main {
+                margin: 2vw;
+                border: none;
+                height: 80vw;
+                margin-bottom: 10vw;
+            }
+
+            .item-undermenu {
+                border: none;
+                margin-left: 4vw;
+                margin: 2vw;
+                height: 25vw;
+            }
+
+
+            .item-aabning {
+                border: none;
+                margin: 2vw;
+                height: 30vw;
+            }
+
+            .item-footer {
+                border: none;
+                background-color: #4a3f3c;
+                height: 20vw;
+            }
+
+        }
+        }
+
         }
     </style>
 </head>
