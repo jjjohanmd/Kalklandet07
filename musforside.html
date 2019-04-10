@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="dk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: (3, 1fr);
+            grid-gap: 0vw;
+            max-width: 760vw;
+            margin: 0 auto;
+            grid-template-areas:
+                'header header header header header'
+                'menu menu menu menu menu'
+                'main main main main main'
+                'aabning aabning aabning aabning aabning'
+                'footer footer footer footer footer'
+        }
+
+        .item {
+            border: 1vw solid #000;
+            height: 50vw;
+
+        }
+
+        .item-header {
+            height: 70vw;
+            grid-area: header;
+        }
+
+
+        .item-main {
+            height: 320vw;
+            grid-area: main;
+        }
+
+        .item-undermenu {
+            height: 15vw;
+            grid-area: menu;
+            margin-top: 40vw;
+        }
+
+        .item-aabning {
+            height: 45vw;
+            grid-area: aabning;
+        }
+
+        .item-footer {
+            height: 50vw;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-header">header
+            <div class="item item-undermenu"></div>
+        </div>
+        <div class="item item-main">baggrund
+        </div>
+        <div class="item item-aabning">aabningstider</div>
+        <div class="item item-footer">footer</div>
+    </div>
+
+</body>
+
+</html>

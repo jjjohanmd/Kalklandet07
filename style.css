@@ -1,5 +1,52 @@
+<<<<<<< HEAD
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+=======
+/*Landing Page*/
+
+.koldkrig img {
+	max-width: 100%;
+}
+
+.faxe img {
+	max-width: 100%;
+}
+
+.klint img {
+	max-width: 100%;
+}
+
+/* WEB Landing Page */
+@media only screen and (min-width:1100px) {
+	.container {
+		display: grid;
+		grid-template-areas: 'koldkrig faxe klint';
+	}
+
+	.koldkrig img {
+		max-width: 33%;
+	}
+
+	.koldkrig {
+		grid-area: koldkrig;
+	}
+
+	.faxe img {
+		max-width: 33%;
+	}
+
+	.faxe {
+		grid-area: faxe;
+	}
+
+	.klint img {
+		max-width: 33%;
+	}
+
+	.klint {
+		grid-area: klint;
+	}
+>>>>>>> origin/master
 
 }
