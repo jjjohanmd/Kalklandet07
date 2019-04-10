@@ -30,16 +30,16 @@
                 'footer footer footer footer footer'
         }
 
-        .item {
-            border: 1vw solid #000;
-            height: 50vw;
-
-        }
-
-        .item-header {
+        .item-headermobil {
             height: 70vw;
             grid-area: header;
             background-image: url(billeder/geo_splash.jpg);
+        }
+
+        .item-headerweb {
+            height: 10vw;
+            grid-area: webheader;
+            display: none;
         }
 
         .item-undermenu {
@@ -50,7 +50,7 @@
         }
 
         .item-main {
-            height: 320vw;
+            height: 120vw;
             grid-area: main;
             background-color: white;
         }
@@ -58,18 +58,22 @@
         .item-aabning {
             height: 45vw;
             grid-area: aabning;
-            background-color: white;
+            background-color: lightgray;
         }
 
         .item-footer {
             height: 50vw;
             grid-area: footer;
-            background-color: white;
+            background-color: #4a3f3c;
         }
 
         @media screen and (min-width: 600px) {
-            .item-header {
+            .item-headermobil {
                 display: none;
+            }
+
+            .item-headerweb {
+                display: inherit;
             }
 
             .item-undermenu {}
@@ -77,6 +81,7 @@
             .container {
                 background-image: url(billeder/geo_splash.jpg);
                 grid-template-areas:
+                    'webheader webheader webheader webheader webheader'
                     'header main main main aabning'
                     'footer footer footer footer footer'
             }
@@ -104,6 +109,7 @@
                 border: none;
                 margin: 2vw;
                 height: 30vw;
+                background-color: white;
             }
 
             .item-footer {
@@ -111,7 +117,6 @@
                 background-color: #4a3f3c;
                 height: 20vw;
             }
-
         }
         }
 
@@ -121,8 +126,8 @@
 
 <body>
     <div class="container">
-        <div class="item item-header">header
-        </div>
+        <div class="item item-headerweb">web-header</div>
+        <div class="item item-headermobil">mobil-header</div>
         <div class="item item-undermenu"></div>
         <div class="item item-main">baggrund</div>
         <div class="item item-aabning">aabningstider</div>
