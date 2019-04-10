@@ -4,12 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kalklandet</title>
+
+
+    <style>
+        .grid-item-header {
+            grid-area: header;
+        }
+
+
+        .grid-item-main {
+            grid-area: main;
+            border: solid 2px black;
+        }
+
+        .grid-item-footer {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header '
+                'main main main'
+                'footer footer footer';
+            grid-gap: 10px;
+        }
+
+        .grid-container>div {
+            background-color: lightgrey;
+            text-align: center;
+
+        }
+    </style>
 </head>
 
 <body>
+    <div class="grid-container">
+        <div class="grid-item-header">header</div>
+        <div class="grid-item-main">main
+            <div class="nyheder">
+
+
+            </div>
+
+
+        </div>
+
+        <div class="grid-item-footer">footer</div>
+    </div>
+
+
     <script src=""></script>
 </body>
+
 
 </html>
