@@ -10,21 +10,21 @@
     <style>
         .grid-item-header {
             grid-area: header;
-        }
-
-
-        .grid-item-main {
-            grid-area: main;
             border: solid 2px black;
         }
 
-        .billede_nyheder img {
-            max-width: 50%
+        .grid-item-main {
+            grid-area: main;
+
         }
 
+        .billede_nyheder img {
+            max-width: 70%
+        }
 
         .grid-item-footer {
             grid-area: footer;
+            border: solid 2px black;
         }
 
         .grid-container {
@@ -52,6 +52,20 @@
 
         h3 {
             font-family: arial;
+            text-align: left;
+        }
+
+        .nyheder_1 {
+            background-color: lightgrey;
+            padding: 6vw;
+            margin: 6vw;
+
+        }
+
+        .nyheder_2 {
+            background-color: lightgrey;
+            padding: 6vw;
+            margin: 6vw;
 
         }
     </style>
@@ -60,7 +74,8 @@
 <body>
     <div class="grid-container">
         <div class="grid-item-header">header</div>
-        <div class="grid-item-main">Main
+        <div class="grid-item-main">
+            <h1> kalklandet</h1>
 
             <div class="nyheder_1">
                 <h3> Nyheder 1 </h3>
