@@ -4,12 +4,124 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kalklandet</title>
+
+
+    <style>
+        .grid-item-header {
+            grid-area: header;
+            border: solid 2px black;
+        }
+
+        .grid-item-main {
+            grid-area: main;
+
+        }
+
+        .billede_nyheder img {
+            max-width: 70%
+        }
+
+        .billede_nyheder img {
+            max-width: 50%
+        }
+
+
+        .grid-item-footer {
+            grid-area: footer;
+            border: solid 2px black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header '
+                'main main main'
+                'footer footer footer';
+            grid-gap: 20px;
+        }
+
+        .grid-container>div {
+            text-align: center;
+
+        }
+
+        .text_nyheder {
+            text-align: left;
+            padding: 2vw;
+            margin: 2vw;
+        }
+
+        p {
+            font-family: arial;
+        }
+
+        h3 {
+            font-family: arial;
+<<<<<<< HEAD
+=======
+            text-align: left;
+        }
+
+        .nyheder_1 {
+            background-color: lightgrey;
+            padding: 6vw;
+            margin: 6vw;
+
+        }
+
+        .nyheder_2 {
+            background-color: lightgrey;
+            padding: 6vw;
+            margin: 6vw;
+>>>>>>> origin/master
+
+        }
+    </style>
 </head>
 
 <body>
+    <div class="grid-container">
+        <div class="grid-item-header">header</div>
+<<<<<<< HEAD
+        <div class="grid-item-main">Main
+=======
+        <div class="grid-item-main">
+            <h1> kalklandet</h1>
+>>>>>>> origin/master
+
+            <div class="nyheder_1">
+                <h3> Nyheder 1 </h3>
+                <div class="billede_nyheder">
+                    <img src="billeder/Placeholder.png">
+                </div>
+                <div class="text_nyheder">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+
+            <div class="nyheder_2">
+                <h3> Nyheder 2</h3>
+                <div class="billede_nyheder">
+                    <img src="billeder/Placeholder.png">
+                </div>
+                <div class="text_nyheder">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="grid-item-footer">footer</div>
+    </div>
+
+
     <script src=""></script>
 </body>
+
 
 </html>

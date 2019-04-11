@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 * {
 	margin: 0;
 }
 
+=======
+<<<<<<< HEAD
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+=======
+>>>>>>> origin/master
 /*Landing Page*/
 
 .koldkrig {
@@ -62,5 +70,6 @@
 	.klint {
 		grid-area: klint;
 	}
+>>>>>>> origin/master
 
 }
