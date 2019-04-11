@@ -1,8 +1,28 @@
+* {
+	margin: 0;
+}
+
 /*Landing Page*/
+
+.koldkrig {
+	margin: 0px;
+	grid-template-areas: 'koldkrig';
+}
+
+
+.faxe {
+	margin: 0px;
+}
+
+.klint {
+	margin: 0px;
+}
 
 .koldkrig img {
 	max-width: 100%;
+	grid-area: koldkrig;
 }
+
 
 .faxe img {
 	max-width: 100%;
@@ -20,7 +40,7 @@
 	}
 
 	.koldkrig img {
-		max-width: 33%;
+		max-width: 100%;
 	}
 
 	.koldkrig {
@@ -28,7 +48,7 @@
 	}
 
 	.faxe img {
-		max-width: 33%;
+		max-width: 100%;
 	}
 
 	.faxe {
@@ -36,7 +56,7 @@
 	}
 
 	.klint img {
-		max-width: 33%;
+		max-width: 100%;
 	}
 
 	.klint {
