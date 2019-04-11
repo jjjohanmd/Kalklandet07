@@ -16,6 +16,7 @@
             box-sizing: border-box;
         }
 
+
         .container {
             display: grid;
             grid-template-columns: (3, 1fr);
@@ -74,9 +75,44 @@
 
             .item-headerweb {
                 display: inherit;
+                height: 20vw;
             }
 
-            .item-undermenu {}
+            .container {
+                background-image: url(billeder/geo_splash.jpg);
+                grid-template-areas:
+                    'webheader webheader webheader webheader webheader'
+                    'header main main main main'
+                    'aabning main main main main'
+                    'footer footer footer footer footer'
+            }
+
+            .item-main {
+                margin: 2vw;
+                height: 100vw;
+                margin-bottom: 10vw;
+            }
+
+            .item-undermenu {
+                margin-left: 4vw;
+                margin: 2vw;
+                height: 45vw;
+            }
+
+
+            .item-aabning {
+                margin: 2vw;
+                height: 30vw;
+                background-color: white;
+            }
+
+            .item-footer {
+                background-color: #4a3f3c;
+                height: 20vw;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
 
             .container {
                 background-image: url(billeder/geo_splash.jpg);
@@ -86,41 +122,19 @@
                     'footer footer footer footer footer'
             }
 
-            .undermenu {
-                height: 50vw;
-            }
+            .item-headerweb {
+                height: 10vw;
 
-            .item-main {
-                margin: 2vw;
-                border: none;
-                height: 80vw;
-                margin-bottom: 10vw;
             }
 
             .item-undermenu {
-                border: none;
-                margin-left: 4vw;
-                margin: 2vw;
-                height: 25vw;
+                height: 27vw;
             }
 
-
-            .item-aabning {
-                border: none;
-                margin: 2vw;
-                height: 30vw;
-                background-color: white;
-            }
-
-            .item-footer {
-                border: none;
-                background-color: #4a3f3c;
-                height: 20vw;
-            }
-        }
         }
 
         }
+
     </style>
 </head>
 
