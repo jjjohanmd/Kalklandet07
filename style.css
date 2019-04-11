@@ -61,5 +61,41 @@
     li {
         display: list-item;
         text-align: -webkit-match-parent;
+        list-style-type: none;
+
+
+    }
+
+    /*Header Menu*/
+
+    a {
+        color: #4a3f3c;
+        text-decoration: none;
+
+    }
+
+
+
+    /*Undermenu*/
+
+
+
+    /*Footermenu*/
+
+    .item-footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 5vw;
+
+    }
+
+    .item-footer a {
+        Font-family: Arial;
+        color: white;
+    }
+
+    .item-footer h2 {
+        color: white;
+
 
     }
