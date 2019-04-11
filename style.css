@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    =======
     /*Landing Page*/
 
     .koldkrig img {
@@ -57,19 +52,14 @@
         }
 
     }
-=======
-<<<<<<< HEAD
-* {
-	margin: 0;
-}
 
-=======
-<<<<<<< HEAD
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-=======
+    * {
+        margin: 0;
+    }
 
 
-}
->>>>>>> origin/master
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+
+    }
